@@ -1,8 +1,5 @@
 # DB QUERY GENERATOR
 
-```markdown
-# Indoor/Outdoor Site Categorization and SQL Query Generator
-
 This project processes site data from a CSV file, categorizes the data based on the indoor/outdoor/lamp pole/NA classification, and generates SQL queries to update a database. The generated queries update the `indoor_outdoor_type_id` field in the `site` table in batches of 300.
 
 ## Table of Contents
@@ -26,21 +23,7 @@ This script reads a CSV file containing information about different sites, parti
   - `Enum`: To manage site classifications (Indoor, Outdoor, Lamp Pole, NA).
   - File I/O: To generate and store SQL queries in text files.
 
-## File Structure
-
-```
-.
-├── import.csv               # Input CSV file with site data
-├── generate_queries.py      # Main Python script
-├── update_indoor_new.txt    # Generated SQL queries for Indoor sites
-├── update_outdoor_new.txt   # Generated SQL queries for Outdoor sites
-├── update_lamp_pole_new.txt # Generated SQL queries for Lamp Pole sites
-├── update_na_new.txt        # Generated SQL queries for NA sites
-└── README.md                # This README file
-```
-
 ## How to Use
-
 ### Pre-requisites
 
 - **Python 3** installed on your system.
